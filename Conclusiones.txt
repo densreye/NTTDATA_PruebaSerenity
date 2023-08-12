@@ -1,0 +1,25 @@
+CONCLUSIONES DE LA API https://api.demoblaze.com/ y portal: https://www.demoblaze.com/
+
+Funcionalidad: Añadir un usuario
+Como recomendación se pide lo siguiente:
+-	Agregar un campo correo electrónico que haga referencia al usuario.
+-	Agregar validaciones en el campo contraseña para seguridad: un mínimo y máximo de caracteres, incluir un número al menos, al menos una mayúscula y al menos un carácter especial.
+-	Opcional: en el formulario SignUP agregar un campo Nombre, Apellido, País, Ciudad, Pregunta de seguridad con su respuesta.
+
+Funcionalidad: Login
+-	Validar los intentos permitidos de intentos fallidos de sesión (establecer un valor ejemplo: 5 intentos y mostrar al usuario cuantos intentos le quedan).
+-	Agregar opción de “Recuperar contraseña”.
+-	En temas de diseño se observa que se tienen dos formas de cerrar el formulario, se recomienda reducir a uno para no generar confusión el usuario.
+
+Funcionalidad: Agregar al Carrito
+-	Al momento de agregar un producto al carrito se despliega un pop up alert del navegador indicando que se añadió el producto, se recomienda que esta alerta sea manejada dentro del portal, esto muchas veces produce fallas en la automatización.
+Funcionalidad: Módulo Cart
+No se encontraron novedades en este módulo
+Funcionalidad: Formulario de compra “Place Order”
+-	Campo Country: se recomienda una lista de los países para evitar fallas de ingreso por los usuarios.
+-	Campo City: se recomienda una lista de las ciudades que estén asociadas con el “country seleccionado” para evitar fallas de ingreso por los usuarios.
+-	Se debe validar el ingreso del campo “Credit card”: esta aceptando valores de tipo texto, caracteres especiales, solo debería aceptar valores numéricos y un numeró determinado de caracteres
+-	Campo “Month”: se recomienda que se maneje este campo con una lista de los meses, en este caso con el número del mes que pertenece
+-	Campo “Year”: Este campo debe solo permitir valores numéricos y llevar el estándar de que usan las tarjetas de crédito.
+-	Añadir el campo clave de la tarjeta de crédito.
+-	Los campos del formulario deben ser obligatorios, debido a que actualmente solo se pide que sea obligatorio el campo nombre y el campo credit card.
