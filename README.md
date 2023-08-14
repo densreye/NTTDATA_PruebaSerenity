@@ -19,10 +19,10 @@ Se deben de tener las siguientes tecnologías y versiones instaladas en su máqu
 
 # Prueba en el terminal
 - Ejecutar el comando para ejecutar la prueba:
-- prueba mvn
+- mvn test
 
 # Para generar los informes, use el siguiente comando: 
-- serenity mvn: agregado
+- mvn serenity:aggregate
 - Visualizar los reportes en la carpeta target/site/serenity
 
 # Ejecutar en IntelliJ IDE
